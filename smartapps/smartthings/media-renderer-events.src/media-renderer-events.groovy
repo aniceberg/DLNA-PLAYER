@@ -66,6 +66,7 @@ def mainPage() {
             "Bell 2",
             "Dogs Barking",
             "Fire Alarm",
+            "Fog Horn",
             "Old School Bell",
             "Piano",
             "Siren",
@@ -591,6 +592,9 @@ private loadText() {
 			break;
 		case "Fire Alarm":
 			state.sound = [uri: "http://s3.amazonaws.com/smartapp-media/sonos/alarm.mp3", duration: "17"]
+			break;		
+		case "Fog Horn":
+			state.sound = [uri: "http://soundbible.com/mp3/foghorn-daniel_simon.mp3", duration: "4"]
 			break;
         case "Old School Bell":
         	state.sound = [uri: "http://soundbible.com/mp3/old-fashioned-school-bell-daniel_simon.mp3", duration: "10"]
